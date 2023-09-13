@@ -2,6 +2,7 @@
 import './App.css'
 import { useState } from "react";
 import AnimalShow from './AnimalShow';
+import AnimalCarousel from './AnimalCarousel';
 
 function getRandomAnimal() {
     const animals = ['bird', 'cat', 'cow', 'dog', 'gator', 'horse' ];
@@ -25,7 +26,10 @@ function App(){
             <h2>Animals include humans!</h2>
             <button onClick={ handleClick }>Increase amount of animals </button>
             <div className='animal-list'>{renderedAnimals}</div>
+            <AnimalCarousel/>
         </div>
+        
+        
     )
 }
 
